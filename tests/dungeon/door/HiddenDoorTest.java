@@ -1,13 +1,21 @@
 package dungeon.door;
 
-import org.junit.Before;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import dungeon.room.Room;
 
 public class HiddenDoorTest {
-	protected boolean HD;
 
-	@Before
-	public void CreateHiddenDoorTest1() {
-
+	@Test
+	public void isHiddenTest() {
+		Room roomA = new Room("room A");
+		Room roomB = new Room("room B");
+		HiddenDoor door = new HiddenDoor(roomA, roomB);
+		assertTrue(door.isHidden());
+		door.reveal();
+		assertFalse(door.isHidden());
 	}
 
 }

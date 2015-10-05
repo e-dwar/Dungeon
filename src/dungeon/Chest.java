@@ -27,11 +27,16 @@ public class Chest {
 	
 	public String getDescription() {
 		String description = "";
-		Iterator<Item> it = this.treasures.iterator();
-		while (it.hasNext()) {
-			description += it.next();
-			if (it.hasNext()) {
-				description += "\n+ ";
+		if (this.treasures.size() == 0) {
+			description = "empty";
+		}
+		else {
+			Iterator<Item> it = this.treasures.iterator();
+			while (it.hasNext()) {
+				description += it.next();
+				if (it.hasNext()) {
+					description += "\n+ ";
+				}
 			}
 		}
 		return description;

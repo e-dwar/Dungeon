@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import dungeon.character.Hero;
+
 public class KeyTest {
 	
 	@Test
@@ -16,6 +18,15 @@ public class KeyTest {
 	public void getNameTest() {
 		Key key = new Key(10);
 		assertEquals("key", key.getName());
+	}
+	
+	@Test
+	public void goToInventoryTest() {
+		Key key = new Key(10);
+		Hero bonhomme = new Hero("bonhomme");
+		assertFalse(bonhomme.hasAKey());
+		key.goToInventory(bonhomme);
+		assertTrue(bonhomme.hasAKey());
 	}
 	
 	@Test
