@@ -17,7 +17,7 @@ public class TreasureRoom extends Room {
 	public void setChest(Chest chest) {
 		this.chest = chest;
 	}
-
+	
 	public String getDescription() {
 		String description = super.getDescription();
 		if (this.chest.isEmpty()) {

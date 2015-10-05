@@ -12,28 +12,32 @@ public class Door {
 		this.roomB = roomB;
 	}
 
+	/**
+	 * Returns the room behind the door.
+	 * 
+	 * @param currentRoom The room from which to move.
+	 * @return
+	 */
 	public Room getNextRoom(Room currentRoom) {
 		if (this.isLocked() || this.isHidden()) {
 			return null;
-		}
-		else if (currentRoom == roomA){
+		} else if (currentRoom == roomA) {
 			return roomB;
-		}
-		else{			
+		} else {
 			return roomA;
 		}
 	}
-	
-	public boolean isLocked(){
+
+	public boolean isLocked() {
 		return false;
 	}
-	
-	public boolean isHidden(){
+
+	public boolean isHidden() {
 		return false;
 	}
 
 	public void unlock() {
 		// noop
-		
+
 	}
 }

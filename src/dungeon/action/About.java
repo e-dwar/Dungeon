@@ -8,6 +8,9 @@ import dungeon.room.Room;
 
 public class About implements Action {
 
+	/**
+	 * @see Action
+	 */
 	public void execute(String[] args) {
 		if (args.length < 2) {
 			Dungeon.message("about what?");

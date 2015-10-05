@@ -15,10 +15,16 @@ public class Potion extends Item {
 		return healthPoints;
 	}
 	
+	/**
+	 * @see Item
+	 */
 	public void goToInventory(Hero hero) {
 		hero.addAPotion(this);
 	}
-	
+
+	/**
+	 * Returns a String representing the potion.
+	 */
 	public String toString() {
 		return this.name + " (" + this.healthPoints + ")";
 	}

@@ -11,6 +11,12 @@ public abstract class Item {
 	 * The name of the item.
 	 */
 	protected String name;
+
+	/**
+	 * Adds itself to the inventory of the hero.
+	 * 
+	 * @param hero 
+	 */
 	public abstract void goToInventory(Hero hero);
 
 	/*
@@ -31,12 +37,10 @@ public abstract class Item {
 		return name;
 	}
 
-	
-	
 	/**
-	 * Returns a String object representing this Item's value.
+	 * Returns a String representing the Item.
 	 */
-	public String toString () {
+	public String toString() {
 		return this.name;
 	}
 

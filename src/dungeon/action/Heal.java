@@ -5,6 +5,9 @@ import dungeon.character.Hero;
 
 public class Heal implements Action {
 
+	/**
+	 * @see Action
+	 */
 	public void execute(String[] args) {
 		Hero hero = Dungeon.getHero();
 		if (hero.hasAPotion()) {			

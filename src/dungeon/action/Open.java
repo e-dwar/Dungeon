@@ -8,6 +8,9 @@ import dungeon.room.Room;
 
 public class Open implements Action {
 
+	/**
+	 * @see Action
+	 */
 	public void execute(String[] args) {
 		Level level = Dungeon.getCurrentLevel();
 		Room currentRoom = level.getCurrentRoom();

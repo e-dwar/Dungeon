@@ -15,10 +15,16 @@ public class Key extends Item {
 		return lifespan;
 	}
 	
+	/**
+	 * @see Item
+	 */
 	public void goToInventory(Hero hero) {
 		hero.addAKey(this);
 	}
 	
+	/**
+	 * Returns a String representing the key.
+	 */
 	public String toString() {
 		return this.name + " (" + this.lifespan + ")";
 	}

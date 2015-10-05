@@ -1,1 +1,7 @@
 dungeon
+dungeon.action
+dungeon.character
+dungeon.door
+dungeon.item
+dungeon.level
+dungeon.room

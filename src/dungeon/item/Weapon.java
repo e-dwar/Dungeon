@@ -33,12 +33,15 @@ public abstract class Weapon extends Item {
 		return this.damage;
 	}
 	
+	/**
+	 * @see Item
+	 */
 	public void goToInventory(Hero hero) {
 		hero.setWeapon(this);
 	}
 
 	/**
-	 * Returns a String object representing this Weapon's value.
+	 * Returns a String representing the weapon.
 	 */
 	public String toString() {
 		return this.name + " (dmg: " + this.damage + ")";

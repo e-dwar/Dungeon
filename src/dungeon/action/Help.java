@@ -4,6 +4,9 @@ import dungeon.Dungeon;
 
 public class Help implements Action {
 
+	/**
+	 * @see Action
+	 */
 	public void execute(String[] args) {
 		Dungeon.message("about me      : display informations about the hero.");
 		Dungeon.message("about here    : display informations about the room.");

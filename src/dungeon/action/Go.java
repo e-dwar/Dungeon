@@ -7,6 +7,9 @@ import dungeon.room.Room;
 
 public class Go implements Action {
 
+	/**
+	 * @see Action
+	 */
 	public void execute(String[] args) {
 		if (args.length < 2) {
 			Dungeon.message("go where?");

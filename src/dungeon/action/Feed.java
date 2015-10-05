@@ -9,6 +9,9 @@ import dungeon.room.Room;
 
 public class Feed implements Action {
 
+	/**
+	 * @see Action
+	 */
 	public void execute(String[] args) {
 		int diffHP;
 		Hero hero = Dungeon.getHero();

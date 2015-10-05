@@ -6,7 +6,10 @@ import dungeon.character.Hero;
 import dungeon.level.Level;
 
 public class Fight implements Action {
-	
+
+	/**
+	 * @see Action
+	 */
 	public void execute(String[] args) {
 		Level level = Dungeon.getCurrentLevel();
 		Hero hero = Dungeon.getHero();
